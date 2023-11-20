@@ -56,6 +56,7 @@ const timeLabel = g.append("text")
 const xAxisCall = d3.axisBottom(x)
 	.tickValues([400, 4000, 40000])
 	.tickFormat(d3.format("$"));
+
 g.append("g")
 	.attr("class", "x axis")
 	.attr("transform", `translate(0, ${HEIGHT})`)
@@ -63,6 +64,7 @@ g.append("g")
 
 // Y Axis
 const yAxisCall = d3.axisLeft(y)
+
 g.append("g")
 	.attr("class", "y axis")
 	.call(yAxisCall)
